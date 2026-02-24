@@ -1,0 +1,63 @@
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0f0f0f; 
+  color: white;
+  padding: 0 16px;
+  height: 56px;
+}
+
+/* Contenedores generales para las 3 secciones */
+.izquierda, .centro, .derecha {
+  display: flex;
+  align-items: center;
+}
+
+/* Sección Izquierda: Logo y Menú */
+.izquierda {
+  gap: 16px; 
+  flex: 1;   
+}
+
+/* Sección Centro: Buscador y Micro */
+.centro {
+  flex: 2;   
+  justify-content: center; 
+  gap: 10px;
+}
+
+/* Sección Derecha: Notificaciones y Perfil */
+.derecha {
+  flex: 1;
+  justify-content: flex-end; 
+  gap: 15px;
+}
+
+/* Estilo de los botones */
+.boton {
+  background: transparent;
+  border: none;
+  border-radius: 50%; 
+  cursor: pointer;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.boton:hover {
+  background-color: #3f3f3f; /* Efecto al pasar el mouse */
+}
+
+/* Ajuste para los iconos SVG dentro de los botones */
+.boton svg {
+  width: 25px;
+  height: 25px;
+}
