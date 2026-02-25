@@ -4,60 +4,101 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  background-color: #0f0f0f; 
+  z-index: 1000; 
   color: white;
   padding: 0 16px;
   height: 56px;
 }
 
-/* Contenedores generales para las 3 secciones */
+
 .izquierda, .centro, .derecha {
   display: flex;
   align-items: center;
 }
 
-/* Sección Izquierda: Logo y Menú */
+
 .izquierda {
   gap: 16px; 
   flex: 1;   
 }
 
-/* Sección Centro: Buscador y Micro */
+
 .centro {
   flex: 2;   
   justify-content: center; 
   gap: 10px;
 }
 
-/* Sección Derecha: Notificaciones y Perfil */
+
 .derecha {
   flex: 1;
   justify-content: flex-end; 
   gap: 15px;
 }
 
-/* Estilo de los botones */
 .boton {
-  background: transparent;
-  border: none;
-  border-radius: 50%; 
-  cursor: pointer;
+  background-color: #3f3f3f; 
   color: white;
-  width: 25px;
-  height: 25px;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background 0.2s;
+   font-size: 18px;
+  transition: background-color 0.2s ease; 
 }
 
 .boton:hover {
-  background-color: #3f3f3f; /* Efecto al pasar el mouse */
+  background-color: #505050;
 }
 
-/* Ajuste para los iconos SVG dentro de los botones */
-.boton svg {
-  width: 25px;
-  height: 25px;
+.transition-iten:hover{
+  background-color: #272727;
+  transition: background 0.2s;
+  cursor: pointer;
 }
+
+.sidebar {
+  width: 30px; 
+  height: 30px;
+  background-color: transparent; 
+  color: white;
+  position: fixed;
+  top: 56px;  
+  padding: 12px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items:center;
+  padding: 10px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+}
+
+.categorias{
+  gap: 500px;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #272727;
+  padding: 5px 5px;
+  border-radius: 10px 10px;
+  font-size: 15px;
+}
+
+.categorias-alejar{
+   margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
