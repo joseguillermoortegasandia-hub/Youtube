@@ -1,0 +1,40 @@
+.main{
+display: grid;
+grid-template-columns: (2 1fr);
+}
+
+.sidebar {
+  width: 25px; 
+  height: 25px;
+  background-color: transparent; 
+  color: white;
+  position: fixed;
+  margin-top: 50px;  
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  align-items: center;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items:center;
+  padding: 10px 10px;
+}
+
+.categorias{
+  gap: 500px;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #272727;
+  padding: 5px 5px;
+  border-radius: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.categorias-alejar{
+   margin-left: 100px;
+}
+
