@@ -32,6 +32,21 @@ nav {
   gap: 10px;
 }
 
+#buscador > input {
+  background-color: transparent;
+  border: 1px solid #313131;
+  border-radius: 20px 0 0 20px;
+  padding: 5px 10px;
+  width: 100%;
+  
+}
+
+#buscador > button {
+  background-color: #313131;
+  border-radius: 0 20px 20px 0;
+  padding: 3px;
+}
+
 
 .derecha {
   flex: 1;
@@ -40,7 +55,7 @@ nav {
 }
 
 .boton {
-  background-color: #3f3f3f; 
+  background-color:  #272727; 
   color: white;
   width: 30px; 
   height: 30px; 
@@ -48,14 +63,22 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-   font-size: 18px;
+  font-size: 18px;
+  border: 1px solid #272727;
+}
+
+.campanita{
+  background-color: transparent;
+  border: none;
+  color: white;
 }
 
 
 .transition-iten:hover{
-  background-color: #272727;
+  background-color: #3f3f3f;
   transition: background-color 0.2s ;
   cursor: pointer;
+  
 }
 
 

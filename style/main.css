@@ -1,21 +1,33 @@
 .main{
 display: grid;
-grid-template-columns: (2 1fr);
+grid-template-columns: 20% 80%;
+}
+
+body{
+background-color: black;  
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  min-height: 100vh;
 }
 
 .sidebar {
   display: grid;
-  width: 25px; 
-  height: 25px;
+  top: 0;
+  z-index: 1000;
   gap: 10px;
-  background-color: transparent; 
+  background-color: transparent;
   color: white;
-  position: sticky;
   padding: 12px;
   font-family: Arial, sans-serif;
   font-size: 10px;
   align-items: center;
 }
+
+
 
 .sidebar-item {
   display: flex;
@@ -23,7 +35,10 @@ grid-template-columns: (2 1fr);
   padding: 10px 10px;
 }
 
+
+
 .categorias{
+  display: flex;
   gap: 10px;
   color: white;
   align-items: center;
@@ -33,9 +48,9 @@ grid-template-columns: (2 1fr);
   border-radius: 10px 10px;
   font-size: 15px;
   cursor: pointer;
+
 }
 
-.categorias-alejar{
-   margin-left: 100px;
-}
+
+
 
