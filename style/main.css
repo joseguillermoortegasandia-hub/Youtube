@@ -4,12 +4,13 @@ grid-template-columns: (2 1fr);
 }
 
 .sidebar {
+  display: grid;
   width: 25px; 
   height: 25px;
+  gap: 10px;
   background-color: transparent; 
   color: white;
-  position: fixed;
-  margin-top: 50px;  
+  position: sticky;
   padding: 12px;
   font-family: Arial, sans-serif;
   font-size: 10px;
@@ -23,7 +24,7 @@ grid-template-columns: (2 1fr);
 }
 
 .categorias{
-  gap: 500px;
+  gap: 10px;
   color: white;
   align-items: center;
   justify-content: space-evenly;
