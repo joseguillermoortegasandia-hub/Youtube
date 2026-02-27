@@ -3,7 +3,9 @@ nav {
   justify-content: space-between; 
   align-items: center;
   padding: 0 20px;
-  height: 56px;  
+  height: 56px; 
+  background-color: #27272779; 
+  backdrop-filter: blur(10px);
 }
 
 .estatica{
@@ -89,15 +91,23 @@ nav {
   border-radius: 20px 20px;
 }
 
+.transition-todo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 .transition-iten:hover{
   background-color: #3f3f3f;
-  transition: background-color 0.2s ;
+  transition: all 0.2s ;
   cursor: pointer;
   }
 
 .transition-todo:hover{
-   background-color: #3f3f3f;
-  transition: background-color 0.2s ;
+  background-color: #3f3f3f;
+  transition: all 0.2s ;
   cursor: pointer;
 }
 
