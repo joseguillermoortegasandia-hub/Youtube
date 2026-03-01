@@ -4,14 +4,25 @@ nav {
   align-items: center;
   padding: 0 20px;
   height: 56px;  
+  
 }
 
 .estatica{
   position: sticky;
   top: 0;
   z-index: 1000; 
-  color: transparent;
+  background-color: #3f3f3f30;
+  backdrop-filter: blur(10px);
 }
+
+.estatica-top{
+position: sticky;
+  top: 100;
+  z-index: 1000; 
+  background-color: #3f3f3f2b;
+  backdrop-filter: blur(1o0px);
+}
+
 
 .izquierda, .centro, .derecha {
   display: flex;
@@ -19,6 +30,9 @@ nav {
   color: white;
 }
 
+.derecha .avatar {
+  border-radius: 50%;
+}
 
 .izquierda {
   gap: 16px; 
@@ -90,15 +104,25 @@ nav {
   border-radius: 20px 20px;
 }
 
+.transition-todo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 5px 5px;
+  padding: 3px;
+}
+
 .transition-iten:hover{
   background-color: #3f3f3f;
-  transition: background-color 0.2s ;
+  transition: all  0.2s ;
   cursor: pointer;
   }
 
 .transition-todo:hover{
    background-color: #3f3f3f;
-  transition: background-color 0.2s ;
+  transition: all 0.2s ;
   cursor: pointer;
 }
 
