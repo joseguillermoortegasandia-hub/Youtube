@@ -20,7 +20,7 @@ body {
   color: white;
   font-family: Arial, sans-serif;
   font-size: 10px;
-  gap: 25px;
+  gap: 20px;
   position: sticky;
   top: 100px;
 }
@@ -36,7 +36,6 @@ body {
   background-color: #272727;
   padding: 8px 8px;
   border-radius: 10px 10px;
-
   cursor: pointer;
   font-family: Arial, sans-serif;
   border: none;
@@ -75,13 +74,12 @@ body {
 .descripcion {
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  gap: 20px;
+  gap: 7px;
   font-family: Arial, sans-serif;
 }
 
 .descripcion img {
   border-radius: 50%;
-
 }
 
 .descripcion p {
@@ -93,4 +91,18 @@ body {
   background-color: transparent;
   border: none;
   color: white;
+}
+
+.shorts-titulo{
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  color:white;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.shorts{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
