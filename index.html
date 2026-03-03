@@ -1,175 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
-    <link rel="stylesheet" href="./style/general.css">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link rel="stylesheet" href="./style/general.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
 
-  <body>
-    <nav class="estatica">
-      <div class="izquierda dos-columnas">
-        <div class=" campanita transition-iten">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="logo.svg" alt="logo">
+<body>
+  <nav class="estatica">
+    <div class="izquierda dos-columnas">
+      <div class=" campanita transition-iten">
+        <i class="fa-solid fa-bars"></i>
       </div>
-      <div id="buscador" class="centro">
-        <input type="text" placeholder="Buscar">
-        <button class=" microfono boton transition-iten">
+      <img src="logo.svg" alt="logo">
+    </div>
+    <div id="buscador" class="centro">
+      <input type="text" placeholder="Buscar">
+      <button class=" microfono boton transition-iten">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+          aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+          <path
+            d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"
+            fill="currentColor"></path>
+        </svg>
+      </button>
+      <button class="boton transition-iten">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+    </div>
+    <div class="derecha">
+      <button class="boton transition-iten"><i class="fa-solid fa-video"></i></button>
+      <button class="transition-iten campanita"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+          width="24" focusable="false" aria-hidden="true"
+          style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+          <path
+            d="M16 19a4 4 0 11-8 0H4.765C3.21 19 2.25 17.304 3.05 15.97l1.806-3.01A1 1 0 005 12.446V8a7 7 0 0114 0v4.446c0 .181.05.36.142.515l1.807 3.01c.8 1.333-.161 3.029-1.716 3.029H16ZM12 3a5 5 0 00-5 5v4.446a3 3 0 01-.428 1.543L4.765 17h14.468l-1.805-3.01A3 3 0 0117 12.445V8a5 5 0 00-5-5Zm-2 16a2 2 0 104 0h-4Z"
+            fill="currentColor"></path>
+        </svg>
+      </button>
+      <img class="avatar" alt="Imagen del avatar" height="32" width="32"
+        src="https://yt3.ggpht.com/yti/ANjgQV9dfgvsyBYbZ-l4PW4FdHN5r1NAlVzf3PheSWuxEk8=s88-c-k-c0x00ffffff-no-rj">
+    </div>
+  </nav>
+  <main>
+    <div class="sidebar-item">
+      <aside class="sidebar  ">
+        <div class="transition-todo">
           <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-            aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+            aria-hidden="true">
             <path
-              d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"
-              fill="currentColor"></path>
+              d="m11.485 2.143-8 4.8-2 1.2a1 1 0 001.03 1.714L3 9.567V20a2 2 0 002 2h5v-8h4v8h5a2 2 0 002-2V9.567l.485.29a1 1 0 001.03-1.714l-2-1.2-8-4.8a1 1 0 00-1.03 0Z"
+              fill="white"></path>
           </svg>
-        </button>
-        <button class="boton transition-iten">
-          <i class="fa-solid fa-microphone"></i>
-        </button>
-      </div>
-      <div class="derecha">
-        <button class="boton transition-iten"><i class="fa-solid fa-video"></i></button>
-        <button class="transition-iten campanita"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-            width="24" focusable="false" aria-hidden="true"
-            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-            <path
-              d="M16 19a4 4 0 11-8 0H4.765C3.21 19 2.25 17.304 3.05 15.97l1.806-3.01A1 1 0 005 12.446V8a7 7 0 0114 0v4.446c0 .181.05.36.142.515l1.807 3.01c.8 1.333-.161 3.029-1.716 3.029H16ZM12 3a5 5 0 00-5 5v4.446a3 3 0 01-.428 1.543L4.765 17h14.468l-1.805-3.01A3 3 0 0117 12.445V8a5 5 0 00-5-5Zm-2 16a2 2 0 104 0h-4Z"
-              fill="currentColor"></path>
-          </svg>
-        </button>
-        <img class="avatar" alt="Imagen del avatar" height="32" width="32"
-          src="https://yt3.ggpht.com/yti/ANjgQV9dfgvsyBYbZ-l4PW4FdHN5r1NAlVzf3PheSWuxEk8=s88-c-k-c0x00ffffff-no-rj">
-      </div>
-    </nav>
-    <main>
-      <div class="sidebar-item">
-        <aside class="sidebar  ">
-          <div class="transition-todo">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-              aria-hidden="true">
-              <path
-                d="m11.485 2.143-8 4.8-2 1.2a1 1 0 001.03 1.714L3 9.567V20a2 2 0 002 2h5v-8h4v8h5a2 2 0 002-2V9.567l.485.29a1 1 0 001.03-1.714l-2-1.2-8-4.8a1 1 0 00-1.03 0Z"
-                fill="white"></path>
-            </svg>
-            <span>Inicio</span>
-          </div>
-          <div class="transition-todo">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-              aria-hidden="true" fill="white">
-              <path
-                d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z">
-              </path>
-            </svg>
-            <span>Shorts</span>
-          </div>
-          <div class="transition-todo">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-              aria-hidden="true">
-              <path
-                d="M18 1H6a2 2 0 00-2 2h16a2 2 0 00-2-2Zm3 4H3a2 2 0 00-2 2v13a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2ZM3 20V7h18v13H3Zm13-6.5L10 10v7l6-3.5Z"
-                fill="white"></path>
-            </svg>
-            <span>Suscripciones</span>
-          </div>
-          <div class="transition-todo">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-              aria-hidden="true">
-              <path
-                d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm0 2a9 9 0 016.447 15.276 7 7 0 00-12.895 0A9 9 0 0112 3Zm0 2a4 4 0 100 8 4 4 0 000-8Zm0 2a2 2 0 110 4 2 2 0 010-4Zm-.1 9.001L11.899 16a5 5 0 014.904 3.61A8.96 8.96 0 0112 21a8.96 8.96 0 01-4.804-1.391 5 5 0 014.704-3.608Z"
-                fill="white"></path>
-            </svg>
-            <span>Tu</span>
-          </div>
-        </aside>
-      </div>
-      <div>
-        <div class="categorias-larga estatica-top">
-          <button class="categorias">Todo</button>
-          <button class="categorias">Musica</button>
-          <button class="categorias">Podcasts</button>
-          <button class="categorias">Mixes</button>
-          <button class="categorias">Videojuegos</button>
-          <button class="categorias">Maletas</button>
-          <button class="categorias">Restaurantes</button>
-          <button class="categorias">En directo</button>
-          <button class="categorias">Raggaeton</button>
-          <button class="categorias">Pop latino</button>
-          <button class="categorias">Comedia</button>
+          <span>Inicio</span>
         </div>
-        <section class="contenido">
-          <section class="video">
-            <img src="https://i.ytimg.com/vi/MwHZ3BGZXTY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLDGA2DcqHSznsso9uxXCLj_sWpvXg" alt="">
-            <div class="descripcion">
-              <div>
-                <img
-                  src="https://yt3.ggpht.com/1EIocOzKEX7pUO3WV44oncyZnCy5uf1eLTAJJAs3biSfsR3sAC7nmxCZQLHGqC96OVqUIVAxfA=s176-c-k-c0x00ffffff-no-rj-mo"
-                  alt="Foto del  canal">
-              </div>
-              <div>
-                <b>
-                <p>La marginalidad venezolana y el bullying de carnaval - EP #723</p>
-                <p>Escuela de Nada <i class="fa-solid fa-circle-check"></i></p>
-                </b>
-              </div>
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="white"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"></path></svg>
-              </div>
-            </div>
-          </section>
-          <section class="video">
-              <img src="https://i.ytimg.com/vi/cfSJh7Nqobs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLDAfw3T13SVSJIDMSI8BtZ7kCe6PA" alt="">
-              <div class="descripcion">
-                <div>
-                  <img
-                    src="https://yt3.ggpht.com/s8Q3znU4zni7eW7a6-h73xiOnH6SQgFaokSG7h-9De0r7nyL1RQjyPBEqlV4fKwr1V1n2dWdlNk=s176-c-k-c0x00ffffff-no-rj-mo" alt="Foto del  canal">
-                </div>
-                <div>
-                  <b>
-                  <p>La marginalidad venezolana y el bullying de carnaval - EP #723</p>
-                  <p>Escuela de Nada <i class="fa-solid fa-circle-check"></i></p>
-                  </b>
-                </div>
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="white"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"></path></svg>
-                </div>
-          </section>
-          <section class="video">
-               <img src="https://i.ytimg.com/vi/UKbTZUJg86A/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLCKAX8jmTRtCSAap8uGmoKULE47-g" alt="">
-              <div class="descripcion">
-                <div>
-                  <img src="https://yt3.ggpht.com/CBUHnpiW75Wuw6M2DW_Q3uucRZmqqrFc3lutsJ99aczKY3jZiLP5kyOuvdbGOP9R2xy5cr-Nog=s176-c-k-c0x00ffffff-no-rj-mo" alt="Foto del  canal">
-                </div>
-                <div>
-                  <b>
-                  <p>La marginalidad venezolana y el bullying de carnaval - EP #723</p>
-                  <p>Escuela de Nada <i class="fa-solid fa-circle-check"></i></p>
-                  </b>
-                </div>
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="white"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"></path></svg>
-                </div>
-              </div>
-          </section>      
-        </section>
-        <section class="shorts-titulo">
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-            <path d="m19.45,3.88c1.12,1.82.48,4.15-1.42,5.22l-1.32.74.94.41c1.36.58,2.27,1.85,2.35,3.27.08,1.43-.68,2.77-1.97,3.49l-8,4.47c-1.91,1.06-4.35.46-5.48-1.35-1.12-1.82-.48-4.15,1.42-5.22l1.33-.74-.94-.41c-1.36-.58-2.27-1.85-2.35-3.27-.08-1.43.68-2.77,1.97-3.49l8-4.47c1.91-1.06,4.35-.46,5.48,1.35Z" fill="#f03"></path>
-            <path d="m10,15l5-3-5-3v6Z" fill="#fff"></path></svg>
-          </div>
-          <div><h3>Shorts</h3>
-          </div>
-          <div><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="white"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"></path></svg>
-          </div>
-        </section>
+        <div class="transition-todo">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+            aria-hidden="true" fill="white">
+            <path
+              d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z">
+            </path>
+          </svg>
+          <span>Shorts</span>
+        </div>
+        <div class="transition-todo">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+            aria-hidden="true">
+            <path
+              d="M18 1H6a2 2 0 00-2 2h16a2 2 0 00-2-2Zm3 4H3a2 2 0 00-2 2v13a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2ZM3 20V7h18v13H3Zm13-6.5L10 10v7l6-3.5Z"
+              fill="white"></path>
+          </svg>
+          <span>Suscripciones</span>
+        </div>
+        <div class="transition-todo">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+            aria-hidden="true">
+            <path
+              d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm0 2a9 9 0 016.447 15.276 7 7 0 00-12.895 0A9 9 0 0112 3Zm0 2a4 4 0 100 8 4 4 0 000-8Zm0 2a2 2 0 110 4 2 2 0 010-4Zm-.1 9.001L11.899 16a5 5 0 014.904 3.61A8.96 8.96 0 0112 21a8.96 8.96 0 01-4.804-1.391 5 5 0 014.704-3.608Z"
+              fill="white"></path>
+          </svg>
+          <span>Tu</span>
+        </div>
+      </aside>
+    </div>
+    <div>
+      <div class="categorias-larga estatica-top">
+        <button class="categorias">Todo</button>
+        <button class="categorias">Musica</button>
+        <button class="categorias">Podcasts</button>
+        <button class="categorias">Mixes</button>
+        <button class="categorias">Videojuegos</button>
+        <button class="categorias">Maletas</button>
+        <button class="categorias">Restaurantes</button>
+        <button class="categorias">En directo</button>
+        <button class="categorias">Raggaeton</button>
+        <button class="categorias">Pop latino</button>
+        <button class="categorias">Comedia</button>
       </div>
-    </main>
-  </body>
+      <section class="contenido">
+        <div class="video">
+          <img
+            src="https://i.ytimg.com/vi/MwHZ3BGZXTY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLDGA2DcqHSznsso9uxXCLj_sWpvXg"
+            alt="">
+          <div class="descripcion">
+            <div>
+              <img
+                src="https://yt3.ggpht.com/1EIocOzKEX7pUO3WV44oncyZnCy5uf1eLTAJJAs3biSfsR3sAC7nmxCZQLHGqC96OVqUIVAxfA=s176-c-k-c0x00ffffff-no-rj-mo"
+                alt="Foto del  canal">
+            </div>
+            <div>
+              <b>
+                <h3>La marginalidad venezolana y el bullying de carnaval - EP #723</h3>
+                <p>Escuela de Nada <i class="fa-solid fa-circle-check"></i></p>
+              </b>
+                <p>85k vizualizaciones - hace 1 dia</p>
+            </div>
+            <div>
+              <button><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                aria-hidden="true" fill="white">
+                <path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z">
+                </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <img
+            src="https://i.ytimg.com/vi/cfSJh7Nqobs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLDAfw3T13SVSJIDMSI8BtZ7kCe6PA"
+            alt="">
+          <div class="descripcion">
+            <div>
+              <img
+                src="https://yt3.ggpht.com/s8Q3znU4zni7eW7a6-h73xiOnH6SQgFaokSG7h-9De0r7nyL1RQjyPBEqlV4fKwr1V1n2dWdlNk=s176-c-k-c0x00ffffff-no-rj-mo"
+                alt="Foto del  canal">
+            </div>
+            <div>
+              <b>
+                <h3>Probrando la MEJOR comida VENEZOLANA por primera vez!</h3>
+                <p>Misho Perjudica <i class="fa-solid fa-circle-check"></i></p>
+              </b>
+                <p>83k vizualizaciones - hace 2 semanas</p>
+            </div>
+            <div>
+              <button><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                aria-hidden="true" fill="white">
+                <path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z">
+                </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <img
+            src="https://i.ytimg.com/vi/UKbTZUJg86A/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLCKAX8jmTRtCSAap8uGmoKULE47-g"
+            alt="">
+          <div class="descripcion">
+            <div>
+              <img
+                src="https://yt3.ggpht.com/CBUHnpiW75Wuw6M2DW_Q3uucRZmqqrFc3lutsJ99aczKY3jZiLP5kyOuvdbGOP9R2xy5cr-Nog=s176-c-k-c0x00ffffff-no-rj-mo"
+                alt="Foto del  canal">
+            </div>
+            <div>
+              <b>
+                <h3>Asi viven los MILLONARIOS en VENEZUELA</h3>
+                <p>Vijando con Dalmau <i class="fa-solid fa-circle-check"></i></p>
+              </b>
+                <p>444k vizualizaciones - hace 5 meses</p>
+            </div>
+            <div>
+              <button><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                aria-hidden="true" fill="white">
+                <path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z">
+                </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shorts-titulo">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false"
+            aria-hidden="true">
+            <path
+              d="m19.45,3.88c1.12,1.82.48,4.15-1.42,5.22l-1.32.74.94.41c1.36.58,2.27,1.85,2.35,3.27.08,1.43-.68,2.77-1.97,3.49l-8,4.47c-1.91,1.06-4.35.46-5.48-1.35-1.12-1.82-.48-4.15,1.42-5.22l1.33-.74-.94-.41c-1.36-.58-2.27-1.85-2.35-3.27-.08-1.43.68-2.77,1.97-3.49l8-4.47c1.91-1.06,4.35-.46,5.48,1.35Z"
+              fill="#f03"></path>
+            <path d="m10,15l5-3-5-3v6Z" fill="#fff"></path>
+          </svg>
+        </div>
+        <div>
+          <h3>Shorts</h3>
+        </div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+            aria-hidden="true" fill="white">
+            <path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"></path>
+          </svg>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
 </html>

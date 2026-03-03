@@ -15,7 +15,6 @@ body {
   top: 100px;
   z-index: 1000;
   flex-direction: column;
-  justify-content: center;
   background-color: transparent;
   color: white;
   font-family: Arial, sans-serif;
@@ -57,13 +56,14 @@ body {
 .contenido {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 17px;
   gap: 10px;
   color: white;
 }
 
 .contenido img {
   width: 100%;
-  border-radius: 30px 30px;
+  border-radius: 15px 15px;
 }
 
 .video {
@@ -71,9 +71,18 @@ body {
   flex-direction: column;
 }
 
+.video:hover{
+  background-color: #3f3f3f; 
+  transition: all 0.2s ;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 15px 15px;
+}
+
 .descripcion {
   display: grid;
   grid-template-columns: 10% 80% 10%;
+  margin-top: 10px;
   gap: 7px;
   font-family: Arial, sans-serif;
 }
@@ -84,13 +93,20 @@ body {
 
 .descripcion p {
   color: #909090;
- 
 }
 
 .descripcion button {
   background-color: transparent;
   border: none;
   color: white;
+}
+
+.descripcion button:hover{
+  background-color: #272727; 
+  transition: all 0.2s ;
+  cursor: pointer;
+  border-radius: 20px 20px;
+
 }
 
 .shorts-titulo{
