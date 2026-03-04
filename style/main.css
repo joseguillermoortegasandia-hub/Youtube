@@ -93,6 +93,7 @@ body {
 
 .descripcion p {
   color: #909090;
+  font-size: 14px;
 }
 
 .descripcion button {
@@ -121,4 +122,36 @@ body {
 .shorts{
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.video-shorts{
+  display: flex;
+  flex-direction: column;
+}
+
+.video-shorts img {
+  display: flex;
+  flex-direction: column;
+  width: 218px;
+  height: 388px;
+  border-radius: 10px 10px;
+}
+
+.video-shorts-contenido{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  color: white;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.video-shorts-contenido p{
+  color: #909090;
+}
+
+
+.video-shorts-contenido button{
+  background-color: transparent;
+  border: none;
 }
